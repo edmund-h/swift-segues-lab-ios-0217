@@ -17,7 +17,7 @@ class AnimalViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         emojiLabel.text = myAnimal
-        
+        //I always try to add a little something extra in every assignment.
         navigationItem.title = "???"
         textLabel.text = "Unknown Animal!"
         guard let animalDesc = animalDict[myAnimal]else{ return }
@@ -25,7 +25,7 @@ class AnimalViewController: UIViewController {
         navigationItem.title = animalDesc
     }
 }
-
+// i prefer dictionary lookup to switch case because it helps me keep a new concept fresh (been doing switch cases since 8th grade) and because I think it's cleaner!
 fileprivate let animalDict = [
     "🐶": "Dog",
     "🐱": "Cat",
